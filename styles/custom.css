@@ -116,13 +116,12 @@
   background-image: url('../public/we-make-better-companies/curve-top-bg.jpg');
 }
 
-.dark-bottom-curved-bg {
-  margin-top: -60px;
-  background-image: url('../public/we-make-better-companies/curve-bottom-bg.jpg');
+.bg-blue {
+  background-color: #000A53;
 }
 
-.bg-purple {
-  background-color: #1C0E2A;
+.bg-light-gray {
+  background-color: #F4F9FC;
 }
 
 .bg-octagon {
