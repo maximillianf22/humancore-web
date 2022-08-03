@@ -5,7 +5,7 @@ import Image from "next/image";
 const CarouselApp = () => {
   return (
     <Container className="d-none d-sm-none d-lg-block">
-      <Carousel className="mt-20" variant="dark">
+      <Carousel className="mt-10" variant="dark">
         <Carousel.Item className="mx-auto text-center justify-content-center">
           <Image
             src="/carousel/img-1.png"

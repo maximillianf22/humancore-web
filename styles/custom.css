@@ -1,21 +1,60 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
 
 .header-bg {
-    background-color: #1C0E2A;
+    position: relative;
     margin-top: -110px;
     width: 100%;
-    min-height: 670px;
+    min-height: 100vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-image: url('../public/bg-header2.jpg');
-    background-size: cover;
+    background-size:contain;
 }
 
-.header-overlay {
-    position: absolute;
-    top: 230px;
-    width: 100%;
+.front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55vw;
+  height: 100vh;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../public/bg-header.png');
+}
+
+.ontop {
+  position: relative;
+  z-index: 7;
+}
+
+.supowepowers-section {
+  min-height: 600px;
+}
+
+.superpowers-img {
+  max-width: 80%;
+  right: 0;
+  position: absolute;
+}
+
+.valign-q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.fz-45 {
+  font-size: 45px !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
 }
 
 .header-polygon {
@@ -28,10 +67,10 @@
 {
   background-image: linear-gradient(
     -225deg,
-    #E53AB4 0%,
+    #3aa6e5 0%,
     #6DB1FA 29%,
     #6847C7 67%,
-    #ff00d4 100%
+    #25c6ee 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -113,12 +152,12 @@
 
 .dark-top-curved-bg {
   margin-top: -80px;
-  background-image: url('../public/we-make-better-companies/curve-top-bg.jpg');
+  background-image: url('../public/did-you-know/curve-top-bg.jpg');
 }
 
 .dark-bottom-curved-bg {
   margin-top: -60px;
-  background-image: url('../public/we-make-better-companies/curve-bottom-bg.jpg');
+  background-image: url('../public/did-you-know/curve-bottom-bg.jpg');
 }
 
 .bg-purple {
@@ -126,7 +165,7 @@
 }
 
 .bg-octagon {
-  background-image: url('../public/we-make-better-companies/octagon.svg');
+  background-image: url('../public/did-you-know/octagon.svg');
 }
 
 @media (min-width: 992px) {
@@ -137,8 +176,10 @@
 
 .relevant-information-bg {
   position: absolute;
-  right: 0;
+  top: 50px;
+  left: -50px !important;
   z-index: -1;
+  width: 800px;
 }
 
 .olga {
@@ -162,9 +203,21 @@
 }
 
 .dark-top-curved-bg {
-  background-image: url('../public/bg-footer.png');
+  background-image: url('../public/bg-footer.jpg');
 }
 
 .border-dashed-light {
   border: #3e4a69 dashed 2px !important;
+}
+
+.header {
+  border-bottom: 0!important;
+}
+
+.bg-light-secondary {
+  background-color: #f4f4fc;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(90deg, #000A55 10.26%, #55A9D8 89.65%);
 }

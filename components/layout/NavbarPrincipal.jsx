@@ -6,10 +6,10 @@ const NavbarPrincipal = () => {
   return (
     <Navbar
       variant="dark"
-      className="header align-items-stretch py-0 bg-purple"
+      className="header align-items-stretch py-0 bg-transparent"
       expand="lg"
     >
-      <Container className="container-xxl d-flex align-items-center">
+      <Container className="container-xxl d-flex align-items-end">
         <Navbar.Brand href="#home">
           <Image
             src="/logo.svg"
@@ -20,48 +20,34 @@ const NavbarPrincipal = () => {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="h-100 text-center bg-purple p-10 p-lg-0">
-          <Nav className="mx-auto h-100" defaultActiveKey="#header">
+        <Navbar.Collapse className="h-100 text-end p-10 p-lg-0">
+          <Nav className="ms-auto h-100" defaultActiveKey="#header">
             <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
+              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-400 fs-6 h-100 my-auto d-flex align-items-center"
               href="#header"
             >
-              Home
+              Discover
             </Nav.Link>
             <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
+              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-400 fs-6 h-100 my-auto d-flex align-items-center"
               href="#how-works"
             >
-              How it Works
+              Superpowers
             </Nav.Link>
             <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
+              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-400 fs-6 h-100 my-auto d-flex align-items-center"
               href="#carousel"
             >
-              What we do
+              WKnow More
             </Nav.Link>
             <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
-              href="#make-companies"
-            >
-              Solutions
-            </Nav.Link>
-            <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
+              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-400 fs-6 h-100 my-auto d-flex align-items-center"
               href="#our-team"
             >
-              Our Team
-            </Nav.Link>
-            <Nav.Link
-              className="menu-item menu-lg-down-accordion mx-1 mx-xl-4 fw-bolder h-100 my-auto d-flex align-items-center"
-              href="#say-clients"
-            >
-              References
+              <i className="fab fa-twitter px-6 border-start border-secondary"></i>
+              <i className="fab fa-linkedin"></i>
             </Nav.Link>
           </Nav>
-          <Button variant="danger" className="py-2 btn-gradient">
-            Sign in
-          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

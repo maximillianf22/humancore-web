@@ -3,13 +3,10 @@ import Head from "next/head";
 import NavbarPrincipal from "../components/layout/NavbarPrincipal";
 import FooterPrincipal from "../components/layout/FooterPrincipal";
 import HeaderImg from "../components/sections/header/HeaderImg";
-import HowWorks from "../components/sections/how-it-works/HowWorks";
-import CarouselApp from "../components/sections/carousel-app/CarouselApp";
-import WeMakeCompanies from "../components/sections/we-make-better-companies/WeMakeCompanies";
-import RelevantInformation from "../components/sections/relevant-information-with-our-reports/RelevantInformation";
-import IndexingInCompany from "../components/sections/indexing-in-your-company/IndexingInCompany";
-import OurTeam from "../components/sections/our-team/OurTeam";
-import WhatClientSays from "../components/sections/what-our-clients-says/WhatClientSays";
+import SuperpowersCircle from "../components/sections/superpowers-circle/SuperpowersCircle";
+import KnowMore from "../components/sections/know-more/KnowMore";
+import DidYouKnow from "../components/sections/did-you-know/DidYouKnow";
+import PrivacyPolicy from "../components/sections/privacy-policy/PrivacyPolicy";
 
 const Home: NextPage = () => {
   return (
@@ -27,33 +24,21 @@ const Home: NextPage = () => {
           <HeaderImg />
         </section>
 
-        <section id="how-works">
-          <HowWorks />
-        </section>
-
-        <section id="carousel">
-          <CarouselApp />
-        </section>
-
-        <section id="make-companies">
-          <WeMakeCompanies />
+        <section id="header">
+          <DidYouKnow />
         </section>
 
         <section id="relevant-information">
-          <RelevantInformation />
+          <KnowMore />
+        </section>
+
+        <section id="how-works">
+          <SuperpowersCircle />
         </section>
 
         <section id="indexing-companies">
-          <IndexingInCompany />
+          <PrivacyPolicy />
         </section>
-
-        {/* <section id="our-team">
-          <OurTeam />
-        </section> */}
-
-        <section id="say-clients">
-          <WhatClientSays />
-        </section> 
 
         <FooterPrincipal />
       </main>
