@@ -4,7 +4,7 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 
 const PrivacyPolicy = () => {
   return (
-    <Container className="p-0">
+    <Container className="p-0 mb-20">
       <div className="px-lg-20 py-15 bg-gradient-blue rounded-3 mt-20">
         <Card className="p-10 px-lg-20 bg-transparent text-white">
           <div className="mb-0">

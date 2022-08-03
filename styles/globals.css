@@ -47199,4 +47199,5 @@ body.page-bg-image-lg {
   }
 }
 
-@import './custom.css'
+@import './custom.css';
+@import './custom2.css';

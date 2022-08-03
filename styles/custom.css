@@ -160,8 +160,12 @@
   background-image: url('../public/did-you-know/curve-bottom-bg.jpg');
 }
 
-.bg-purple {
-  background-color: #1C0E2A;
+.bg-blue {
+  background-color: #000A53;
+}
+
+.bg-light-gray {
+  background-color: #F4F9FC;
 }
 
 .bg-octagon {
